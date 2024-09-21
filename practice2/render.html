@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/USA.js"></script>
+
+</head>
+<body >
+    <div id="35bbdccf2ea64c22bf2082e435134956" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_35bbdccf2ea64c22bf2082e435134956 = echarts.init(
+            document.getElementById('35bbdccf2ea64c22bf2082e435134956'), 'white', {renderer: 'canvas'});
+        var option_35bbdccf2ea64c22bf2082e435134956 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "name": "City",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "AZ",
+                    "value": [
+                        -111.7,
+                        34.45,
+                        3807.32
+                    ]
+                },
+                {
+                    "name": "CA",
+                    "value": [
+                        -120.44,
+                        36.44,
+                        14791.83
+                    ]
+                },
+                {
+                    "name": "NM",
+                    "value": [
+                        -106.11,
+                        34.45,
+                        1439.7
+                    ]
+                },
+                {
+                    "name": "CO",
+                    "value": [
+                        -105.52,
+                        38.89,
+                        2697.83
+                    ]
+                },
+                {
+                    "name": "WY",
+                    "value": [
+                        -107.29,
+                        42.96,
+                        2185.69
+                    ]
+                }
+            ],
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        },
+        {
+            "type": "scatter",
+            "name": "Lake",
+            "coordinateSystem": "geo",
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "LM",
+                    "value": [
+                        -114.39,
+                        36.25,
+                        13320000
+                    ]
+                },
+                {
+                    "name": "BA",
+                    "value": [
+                        -111.29,
+                        36.56,
+                        11674000
+                    ]
+                }
+            ],
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "City",
+                "Lake"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u6c34\u5e93",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 11000000,
+        "max": 14000000,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "hoverLink": true,
+        "orient": "vertical",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "\u7f8e\u56fd",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_35bbdccf2ea64c22bf2082e435134956.setOption(option_35bbdccf2ea64c22bf2082e435134956);
+    </script>
+</body>
+</html>
